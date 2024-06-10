@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+   <profiles>
+      <profile>
+         <id>archetype-repository</id>
+         <repositories>
+            <repository>
+               <id>archetype</id>
+               <name>Mule Repository</name>
+               <url>https://repository-master.mulesoft.org/nexus/content/repositories/public</url>
+               <releases>
+                  <enabled>true</enabled>
+                  <checksumPolicy>fail</checksumPolicy>
+               </releases>
+               <snapshots>
+                  <enabled>true</enabled>
+                  <checksumPolicy>fail</checksumPolicy>
+               </snapshots>
+            </repository>
+         </repositories>
+      </profile>
+      <profile>
+        <id>archetype-repository</id>
+        <repositories>
+         <repository>
+            <id>archetype</id>
+            <name>Mule Repository</name>
+            <url>https://repositorymaster.mulesoft.org/nexus/content/repositories/public</url>
+            <releases>
+               <enabled>true</enabled>
+               <checksumPolicy>fail</checksumPolicy>
+            </releases>
+            <snapshots>
+               <enabled>true</enabled>
+               <checksumPolicy>warn</checksumPolicy>
+            </snapshots>
+         </repository>
+        </repositories>
+      </profile>
+   </profiles>
+   <servers>
+   
+      <server>
+         <id>credentials</id>
+         <username>Jeevan_1803</username>
+         <password>Jeevan@1801</password>
+      </server>
+   </servers>
+</settings>
+
