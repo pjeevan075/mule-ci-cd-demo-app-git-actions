@@ -32,16 +32,19 @@
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>${app.runtime}</muleVersion>
-						<username>Jeevan_1803</username>
-						<password>Jeevan@1801</password>
-						<applicationName>mule-ci-cd-demo-app</applicationName>
-						<environment>Sandbox</environment>
+						<muleVersion>4.9.6</muleVersion>
+						<connectedAppClientId>${anypoint.connectedApp.clientId}</connectedAppClientId>
+						<connectedAppClientSecret>${anypoint.connectedApp.clientSecret}</connectedAppClientSecret>
+						<connectedAppGrantType>client_credentials</connectedAppGrantType>
+						<businessGroupId>${anypoint.businessGroup}</businessGroupId>
+						<environment>${env}</environment>
 						<region>us-east-2</region>
+						<applicationName>${appname}</applicationName>
+						<workers>1</workers>
 						<workerType>MICRO</workerType>
 						<properties>
-							<http.port>8081</http.port>
-			                <https.port>8082</https.port>
+							<anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>
+							<anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>
 						</properties>
 					</cloudHubDeployment>
 				</configuration>
